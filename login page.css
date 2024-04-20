@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  background-color: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1px 20px;
+}
+
+nav .logo {
+  height: auto;
+	width: 180px;
+}
+
+nav .logo img {
+  width: 100%;
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 50px;
+  margin-left: 10px;
+}
+
+nav ul li a {
+  color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 10px;
+	transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.container {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 50px auto;
+	padding: 20px;
+	width: 400px;
+	background-color: #fff;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+
+.container h1 {
+  margin-bottom: 30px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.container label {
+  margin-bottom: 10px;
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="tel"] {
+  border: 1px solid #0d0c0c;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	width: 100%;
+}
+
+.container button {
+  background-color: #4CAF50;
+  border: none;
+  color: #050404;
+  padding: 10px;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.otp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.otp-container p {
+  margin-bottom: 10px;
+}
+
+.otp-container input[type="number"] {
+  border: 1px solid #706060;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.otp-container button {
+  background-color: #4CAF50;
+  border: none;
+  color: #000000;
+  padding: 10px;
+  text-transform: uppercase;
+  width: 50%;
+  cursor: pointer;
+}
+@media screen and (max-width: 510px) {
+	nav ul li {
+		margin-right: 20px;
+		margin-left: 5px;
+	}
+
+	.container {
+		width: 90%;
+	}
+}
